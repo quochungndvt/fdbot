@@ -1,0 +1,32 @@
+{
+  "name": "fdbot",
+  "scripts": {
+  },
+  "env": {
+    "FB_PAGE_TOKEN": {
+      "required": true
+    },
+    "FB_VERIFY_TOKEN": {
+      "required": true
+    },
+    "MICROSOFT_APP_ID": {
+      "required": true
+    },
+    "MICROSOFT_APP_PASSWORD": {
+      "required": true
+    },
+    "WIT_TOKEN": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
