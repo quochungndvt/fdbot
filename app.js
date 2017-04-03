@@ -181,7 +181,7 @@ bot.dialog('/', [
         //     ]);
         // var msg = new builder.Message(session).attachments([card]);
         // session.send(msg);
-        session.send("Chào bạn!");
+        session.send("Hi... I'm the FD Bot");
         session.beginDialog('/help');
         
     },
@@ -197,7 +197,7 @@ bot.dialog('/', [
 
 bot.dialog('/menu', [
     function (session) {
-        builder.Prompts.choice(session, "Vui lòng chọn thao tác?", "prompts|picture|cards|list|carousel|receipt|actions|(quit)");
+        builder.Prompts.choice(session, "What demo would you like to run?", "prompts|picture|cards|list|carousel|receipt|actions|setAlarm|(quit)");
     },
     function (session, results) {
         if (results.response && results.response.entity != '(quit)') {
