@@ -2,9 +2,9 @@
 
 // Wit.ai parameters
 const WIT_TOKEN = process.env.WIT_TOKEN;
-if (!WIT_TOKEN) {
-  throw new Error('missing WIT_TOKEN');
-}
+// if (!WIT_TOKEN) {
+//   throw new Error('missing WIT_TOKEN');
+// }
 
 // Messenger API parameters
 const FB_PAGE_TOKEN = process.env.FB_PAGE_TOKEN;

@@ -52,7 +52,7 @@ const botw = require('./bot.js');
 const FB = require('./facebook.js');
 
 // Setting up our bot
-const wit = botw.getWit();
+// const wit = botw.getWit();
 //=========================================================
 // Bot Setup
 //=========================================================
@@ -61,7 +61,7 @@ const wit = botw.getWit();
 var server = restify.createServer();
 server.use(plugins.queryParser());
 server.use(plugins.bodyParser());
-server.listen(process.env.port || process.env.PORT || 3978, function () {
+server.listen(process.env.port || process.env.PORT || 3000, function () {
    console.log('%s listening to %s', server.name, server.url); 
 });
 
